@@ -12,14 +12,12 @@ body {
     background: #f5f5f5;
 }
 
-/* HEADER IMAGE */
 .header-img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* HEADER TEXT */
 .header-text {
     background: #000;
     color: gold;
@@ -27,12 +25,8 @@ body {
     padding: 15px;
 }
 
-/* SECTION */
-.section {
-    padding: 15px;
-}
+.section { padding: 15px; }
 
-/* CARD */
 .card {
     background: white;
     padding: 15px;
@@ -41,7 +35,6 @@ body {
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-/* BUTTONS */
 .btn {
     display: block;
     text-align: center;
@@ -53,15 +46,9 @@ body {
     font-weight: bold;
 }
 
-.whatsapp {
-    background: green;
-}
+.whatsapp { background: green; }
+.call { background: red; }
 
-.call {
-    background: red;
-}
-
-/* FORM */
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -70,10 +57,7 @@ input, textarea {
     border: 1px solid #ccc;
 }
 
-label {
-    display: block;
-    margin-top: 8px;
-}
+label { display: block; margin-top: 8px; }
 
 button {
     background: black;
@@ -85,105 +69,111 @@ button {
     border-radius: 8px;
     font-weight: bold;
 }
-</style>
 
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* SLIDER */
+.slider { overflow: hidden; }
+
+.slide-track {
+    display: flex;
+    width: 200%;
+    animation: slide 6s linear infinite;
+}
+
+.slide-track img {
+    width: 50%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
 
-<!-- TOP IMAGE -->
 <img class="header-img" src="https://raw.githubusercontent.com/allroundadvert/BLESSED-CHUKWUBUIKM-GLOBAL-COMPANY-/f7b1e0c70ed742de6da0ae4a9307520a50f3f2cc/Screenshot_20260320-235736.jpg">
 
-<!-- HEADER TEXT -->
 <div class="header-text">
-    <h2>BLESSEDCHUKWUBUIKEM GLOBAL COMPANY</h2>
-    <p>Dealers on all kinds of Building Materials for magnificent buildings, house renovation, offices, and homes</p>
+<h2>BLESSEDCHUKWUBUIKEM GLOBAL COMPANY</h2>
+<p>Dealers on all kinds of Building Materials</p>
 </div>
 
 <div class="section">
 
-<div class="card">
-<h3>Our Products</h3>
-<p>
-Porcelain, Granite, Bricks, Ceramic Tiles, Floor Tiles, Wall Tiles, Marble, etc.
-</p>
+<!-- SLIDER -->
+<div class="card slider">
+<div class="slide-track">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124923.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-124949.jpg">
+</div>
 </div>
 
+<!-- ALL IMAGES -->
 <div class="card">
-<h3>Contact Us</h3>
+<div class="grid">
 
-<a class="btn whatsapp" href="https://wa.me/2348032605079">
-Chat on WhatsApp
-</a>
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125024.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125050.jpg">
 
-<a class="btn call" href="tel:08171665222">
-Call Now
-</a>
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125100.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125148.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130130.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130347.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130549.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131035.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131107.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131124.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131147.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131416.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131903.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132245.jpg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132339.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250917-223143.jpg">
 
 </div>
-
-<div class="card">
-<h3>Head Office</h3>
-<p>Line Q Shop Number 1 Building Materials Int'l Market, Ogidi, Anambra State.</p>
-
-<h3>Branch Office</h3>
-<p>Number 4 Plus Anozie Street, Nando Plaza, Afia Ekwe Building Materials Int Market, Ogidi, Anambra State.</p>
-
-<h3>Branch Office</h3>
-<p>Kilometer 10 Asaba-Benin Expressway, Opposite Ogbo Osisi Agbor Line, Adjacent Bonsac Junction, Asaba, Delta State.</p>
 </div>
 
-<div class="card">
-<h3>Place Your Order (Foreign Tiles)</h3>
-
-<form>
-
-<label>Your Name</label>
-<input type="text" placeholder="Enter your name">
-
-<label>Phone Number</label>
-<input type="number" placeholder="Enter phone number">
-
-<label>Select Tiles</label>
-
-<label><input type="checkbox"> Floor Tiles</label>
-<label><input type="checkbox"> Wall Tiles</label>
-<label><input type="checkbox"> China Tiles</label>
-<label><input type="checkbox"> Indian Tiles</label>
-<label><input type="checkbox"> Spanish Tiles</label>
-<label><input type="checkbox"> Italian Tiles</label>
-<label><input type="checkbox"> Turkey Tiles</label>
-
-<textarea placeholder="Additional details..."></textarea>
-
-<button type="submit">Submit Order</button>
-
-</form>
-</div>
-
-<div class="card">
-<h3>Place Your Order (Nigeria Tiles)</h3>
-
-<form>
-
-<label>Your Name</label>
-<input type="text" placeholder="Enter your name">
-
-<label>Phone Number</label>
-<input type="number" placeholder="Enter phone number">
-
-<label>Select Nigeria Tiles</label>
-
-<label><input type="checkbox"> CDK Tiles</label>
-<label><input type="checkbox"> Royal Tiles</label>
-<label><input type="checkbox"> Virony Tiles</label>
-<label><input type="checkbox"> Good Will Tiles</label>
-<label><input type="checkbox"> Best Will Tiles</label>
-
-<textarea placeholder="Additional details..."></textarea>
-
-<button type="submit">Submit Order</button>
-
-</form>
+<!-- MAP -->
+<div class="card map">
+<h3>Our Location</h3>
+<iframe src="https://maps.google.com/maps?q=Ogidi%20Anambra%20Nigeria&output=embed"></iframe>
 </div>
 
 </div>
