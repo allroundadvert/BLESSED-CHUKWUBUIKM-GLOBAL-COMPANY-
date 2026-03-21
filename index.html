@@ -57,7 +57,15 @@ input, textarea {
     border: 1px solid #ccc;
 }
 
-label { display: block; margin-top: 8px; }
+label { 
+    display: block; 
+    margin-top: 8px; 
+}
+
+label input[type="checkbox"] {
+    margin-right: 8px; /* space between box and product name */
+    vertical-align: middle; /* aligns box with text */
+}
 
 button {
     background: black;
@@ -190,7 +198,7 @@ button {
 </form>
 </div>
 
-<!-- ✅ MAP MOVED TO BOTTOM -->
+<!-- MAP AT THE VERY BOTTOM -->
 <div class="card map">
 <h3>Our Location</h3>
 <iframe src="https://maps.google.com/maps?q=Ogidi%20Anambra%20Nigeria&output=embed"></iframe>
