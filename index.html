@@ -94,15 +94,17 @@ button {
     100% { transform: translateX(-50%); }
 }
 
-/* GRID */
+/* STRONG COLUMN FIX */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .grid img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 10px;
 }
 </style>
@@ -127,7 +129,7 @@ button {
 </div>
 </div>
 
-<!-- ALL IMAGES -->
+<!-- TILE IMAGES (2 PER ROW FIXED) -->
 <div class="card">
 <div class="grid">
 
@@ -140,33 +142,6 @@ button {
 <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125317.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125347.jpg">
 
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125410.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125516.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125605.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-125640.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130003.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130020.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130130.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130347.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-130549.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131035.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131107.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131124.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131147.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131416.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-131903.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132245.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250807-132339.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/OKEY-UGA-GLOBAL-WORLD-/423dad821a67eb347afc3e75fc60c0fb33796df8/Screenshot_20250917-223143.jpg">
-
 </div>
 </div>
 
@@ -174,6 +149,43 @@ button {
 <div class="card map">
 <h3>Our Location</h3>
 <iframe src="https://maps.google.com/maps?q=Ogidi%20Anambra%20Nigeria&output=embed"></iframe>
+</div>
+
+<!-- FORMS -->
+<div class="card">
+<h3>Place Your Order (Foreign Tiles)</h3>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="number" placeholder="Phone Number">
+
+<label><input type="checkbox"> Floor Tiles</label>
+<label><input type="checkbox"> Wall Tiles</label>
+<label><input type="checkbox"> China Tiles</label>
+<label><input type="checkbox"> Indian Tiles</label>
+<label><input type="checkbox"> Spanish Tiles</label>
+<label><input type="checkbox"> Italian Tiles</label>
+<label><input type="checkbox"> Turkey Tiles</label>
+
+<textarea placeholder="Additional details"></textarea>
+<button>Submit Order</button>
+</form>
+</div>
+
+<div class="card">
+<h3>Place Your Order (Nigeria Tiles)</h3>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="number" placeholder="Phone Number">
+
+<label><input type="checkbox"> CDK Tiles</label>
+<label><input type="checkbox"> Royal Tiles</label>
+<label><input type="checkbox"> Virony Tiles</label>
+<label><input type="checkbox"> Good Will Tiles</label>
+<label><input type="checkbox"> Best Will Tiles</label>
+
+<textarea placeholder="Additional details"></textarea>
+<button>Submit Order</button>
+</form>
 </div>
 
 </div>
